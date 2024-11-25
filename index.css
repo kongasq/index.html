@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+nav {
+    width: 100%;
+    height: 100px;
+    background: #0b23f3;
+}
+.nav-container {
+     max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-title {
+    font-size: 2rem;
+    color: #fff;
+}
+.nav-search {
+    width: 700px;
+    height: 40px;
+    position: relative;
+}
+.nav-txt-search {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+.nav-btn-search {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+
+    width: 60px;
+    height: 34px;
+    background: #f03405;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
+
+.btn-basket {
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.top-nav-left{
+    display: flex;
+}
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.hightlight {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    grid-gap: 5px;
+}
+.hightlight img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hightlight img:first-child {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 2;
+
+}   
+.list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.list-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.list-items-border {
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.bg-product {
+    width: 100%;
+    background: #f2f2f2;
+}
+.product {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(auto-fill, 250px);
+    grid-gap: 10px;
+}
+.product-list {
+    cursor: pointer;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    transition: 300ms;
+}
+.product-list:hover {
+    transform: scale(1.05)
+}
+.product-list img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+}
+.product-detail {
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-detail-name {
+    height: 32px;
+    overflow: hidden;
+    font-size: .8rem;
+    color: #333;
+}
+.product-detail-price {
+    font-size: .8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-detail-price span:first-child {
+    font-size: 1.2rem;
+    color: #F84B2F;
+}
+.product-detail-price span:last-child {
+    font-size: .8rem;
+    color: #adadad;
+}
+
+/* พื้นหลังสีดำสำหรับแถบ */
+.top-nav {
+
+    padding: 10px;
+  }
+  
+  /* สไตล์สำหรับคอนเทนเนอร์ */
+  .top-nav .container {
+    display: flex; /* ใช้ flexbox เพื่อจัดเรียงข้อมูล */
+    align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+  }
+  
+  /* สไตล์สำหรับข้อความด้านซ้าย */
+  .top-nav-left span {
+    margin-right: 15px; /* ระยะห่างระหว่างอีเมลกับเบอร์โทร */
+    color: white; /* สีข้อความพื้นฐาน */
+    font-size: 14px; /* ขนาดข้อความ */
+  }
+  
+  /* เปลี่ยนสีเฉพาะไอคอนและอีเมล */
+  .top-nav-left span:first-child {
+    color: yellow;
+  }
+  
+  /* สไตล์สำหรับไอคอน */
+  .top-nav-left i {
+    margin-right: 5px; /* ระยะห่างระหว่างไอคอนกับข้อความ */
+    font-size: 14px;
+  }
+  
